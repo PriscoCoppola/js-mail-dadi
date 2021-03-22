@@ -4,23 +4,25 @@
 // 2) Controlla che sia nella lista di chi può accedere
 // 3) Stampa un messaggio appropriato sull’esito del controllo
 
-var list = ['boolean@gmail.com', 'francesco@gmail.com', 'gabriele@gmail.com'];
+function ok() {
+    var list = ['boolean@gmail.com', 'francesco@gmail.com', 'gabriele@gmail.com'];
 
-var userMail = prompt('Scrivi la tua mail');
+    var userMail = document.getElementById('text').value;
 
-var userFound = false;
+    var userFound = false;
 
-for (var i = 0; i < list.length; i++) {
+    for (var i = 0; i < list.length; i++) {
 
-    if (userMail === list[i]) {
-        userFound = true;
+        if (userMail === list[i]) {
+            userFound = true;
+        }
     }
-}
 
-if (userFound === true) {
-    document.getElementById('print').innerHTML = ('La tua mail è presente nel database')
-} else {
-    document.getElementById('print').innerHTML = ('La tua mail non è presente nel database')
+    if (userFound === true) {
+        document.getElementById('print').innerHTML = ('La tua mail è presente nel database')
+    } else {
+        document.getElementById('print').innerHTML = ('La tua mail non è presente nel database')
+    }
 }
 
 

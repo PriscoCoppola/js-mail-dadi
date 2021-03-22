@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: aqua;
+}
+ 
+button,
+input {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#print {
+    padding-top: 50px;
+}
+
+.dadi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+.tiro {
+    display: flex;
+}
+
+#user {
+    padding-right: 100px;
+}
+
+#user,
+#pc {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

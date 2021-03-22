@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail - Dadi</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- MAIL -->
-    <h1>Lista Email</h1>
-    <div id="print">Caricamento...</div>
+    <div class="mail">
+        <h1>Lista Email</h1>
+        <input type="email" id="text" placeholder="Scrivi la tua mail">
+        <button onclick="ok()">Controlla</button>
+        <div id="print">Caricamento...</div>
+    </div>
 
     <!-- DADI -->
-    <h1>Gioco Dei Dadi</h1>
-    <div id="user"></div>
-    <div id="pc"></div>
-    <div id="result">Caricamento...</div>
+    <div class="dadi">
+        <h1>Gioco Dei Dadi</h1>
+        <div class="tiro">
+            <div id="user"></div>
+            <div id="pc"></div>
+        </div>
+        <div id="result">Caricamento...</div>
+    </div>
 
     <!-- Javascript -->
     <script src="./js/main.js"></script>
